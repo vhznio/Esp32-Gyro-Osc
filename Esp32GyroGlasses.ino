@@ -74,34 +74,4 @@ void loop(){
       Serial.print("Connection lost");
       delay(200);
     }
-    /*
-    for(int i = 0; i < 3; i++){
-      Serial.println(myValues[i]);
-    }
-    OSCMessage msg("/X-AXIS");
-    msg.add(xAxis);
-    
-    Udp.beginPacket(DestIp,DestPort);
-    msg.send(Udp);
-    Udp.endPacket();
-    msg.empty();
-
-    OSCMessage msg1("/Y-AXIS");
-    msg1.add(yAxis);
-    
-    Udp.beginPacket(DestIp,DestPort);
-    msg1.send(Udp);
-    Udp.endPacket();
-    msg1.empty();
-
-    OSCMessage msg2("/Z-AXIS");
-    msg2.add(zAxis);
-    
-    Udp.beginPacket(DestIp,DestPort);
-    msg2.send(Udp);
-    Udp.endPacket();
-    msg2.empty();
-
-    delay(100);
-    */
-  }
+}
